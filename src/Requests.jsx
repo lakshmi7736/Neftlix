@@ -1,4 +1,4 @@
-const key = 'clint'
+const key = '89d87d0930f1bcf69157dedb385477a8'
 
 const requests = {
   requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`,
