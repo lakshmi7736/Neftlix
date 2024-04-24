@@ -25,6 +25,7 @@ const Navbar =()=> {
       </Link>
       {user?.email ?(
         <div>
+          
         <Link to="/account">
           <button className="text-white pr-4">Account</button>
         </Link>
@@ -34,6 +35,22 @@ const Navbar =()=> {
       </div>
       ):(
         <div>
+
+{/* if needed further update  */}
+           {/* <Link to="/action">
+          <button className="text-white pr-4">Action</button>
+        </Link>
+        <Link to="/comedy">
+          <button className="text-white pr-4">Comedy</button>
+        </Link>
+        <Link to="/romance">
+          <button className="text-white pr-4">Romance</button>
+        </Link>
+        <Link to="/horror">
+          <button className="text-white pr-4">Horror</button>
+        </Link> */}
+
+
         <Link to="/login">
           <button className="text-white pr-4">Sing In</button>
         </Link>

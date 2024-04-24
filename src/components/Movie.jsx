@@ -30,6 +30,7 @@ const Movie = ({ item }) => {
     }
   };
 
+  
   const handleMovie = async (id) => {
     try {
       const trailerResponse = await axios.get(
@@ -45,7 +46,7 @@ const Movie = ({ item }) => {
   const closeModal = () => {
     setIsModalOpen(!isModalOpen);
   };
-  // onClick={() => handleMovie(item.id)}
+
   return (
     <div 
       className="w-[160px] sm:w-[200px] md:w-[240px] inline-block cursor-pointer relative p-2"
