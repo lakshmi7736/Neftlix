@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react'
 import requests from '../Requests'
 import axios from 'axios'
 
+// Banner realate
 const Main = () => {
+
     const [movies, setMovies] = useState([]) 
 
     const movie = movies[Math.floor(Math.random()*movies.length)]
@@ -12,8 +14,8 @@ const Main = () => {
             setMovies(response.data.results)
         })
     },[])
-    // console.log(movie)
 
+// discription limit set not more than 150 words
     const truncateString = (str, num) => {
         if(str?.length > num){
             return str.slice(0, num) + '...'

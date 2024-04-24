@@ -6,6 +6,7 @@ import requests from '../../Requests'
 function Home() {
   return (
     <>
+         {/* Banner realate */}
         <Main />
         <Row rowID='1' title='UpComing' fetchURL={requests.requestUpcoming} />
         <Row rowID='2' title='Popular' fetchURL={requests.requestPopular} />
